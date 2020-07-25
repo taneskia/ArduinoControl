@@ -1,0 +1,2 @@
+rootProject.name='ArduinoControl'
+include ':app'

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "72547597929",
+    "firebase_url": "https://fir-arduino-43bc8.firebaseio.com",
+    "project_id": "fir-arduino-43bc8",
+    "storage_bucket": "fir-arduino-43bc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72547597929:android:9f3cfbecfb200880872cf8",
+        "android_client_info": {
+          "package_name": "com.example.arduinocontroll2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72547597929-259cejd9lprkc5nrnppbcaou94j62lch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgVyqi-WRE2tx187_b9ksZYCU622d1QNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72547597929-259cejd9lprkc5nrnppbcaou94j62lch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

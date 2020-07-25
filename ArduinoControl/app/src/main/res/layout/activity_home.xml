@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeText" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="35dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setButton"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/dateButtonStart"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:text="Select"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="@+id/currentStateDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/timeButtonStart"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:text="Select"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="@+id/dateButtonStart"
+        app:layout_constraintTop_toBottomOf="@+id/dateButtonStart" />
+
+    <EditText
+        android:id="@+id/startTimeText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Start Time"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="@+id/startDateText"
+        app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+    <Button
+        android:id="@+id/timeButtonEnd"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:text="Select"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="@+id/dateButtonEnd"
+        app:layout_constraintTop_toBottomOf="@+id/dateButtonEnd" />
+
+    <EditText
+        android:id="@+id/endTimeText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="End Time"
+
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="@+id/endDateText"
+        app:layout_constraintTop_toBottomOf="@+id/endDateText" />
+
+    <EditText
+        android:id="@+id/startDateText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Start Date"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="@+id/currentStateDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/dateButtonEnd"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Select"
+        android:background="@drawable/round_button"
+        app:layout_constraintEnd_toEndOf="@+id/timeButtonStart"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <EditText
+        android:id="@+id/endDateText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="End Date"
+        android:inputType="none"
+        app:layout_constraintStart_toStartOf="@+id/startTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/currentStateDisplay"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <Button
+        android:id="@+id/setButton"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button"
+        android:text="SET"
+        app:layout_constraintEnd_toStartOf="@+id/setDailyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeText" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current State"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/currentStateDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <CheckBox
+        android:id="@+id/setManuallyCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET MANUALLY"
+
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <Switch
+        android:id="@+id/manualOnOffSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
+        android:enabled="false"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintBottom_toTopOf="@+id/divider5"
+        app:layout_constraintStart_toEndOf="@+id/setManuallyCheck"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/signedinUserText"
+        android:layout_width="204dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="67dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/round_button"
+        android:text="Logout"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signedinUserText"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <ImageButton
+        android:id="@+id/refreshButton"
+        android:layout_width="76dp"
+        android:layout_height="28dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentStateDisplay"
+        app:srcCompat="@drawable/ic_autorenew_black_24dp" />
+
+    <Button
+        android:id="@+id/setDailyButton"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_button"
+        android:text="SET DAILY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/setButton"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
